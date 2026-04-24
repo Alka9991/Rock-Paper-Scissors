@@ -26,12 +26,15 @@ function autoplay() {
       }, 1000);
       isautoplaying = true;
       console.log("Auto Play Started");
+     document.querySelector('.stop').innerHTML = "Start Autoplay";
     }
     else{
          clearInterval(IntervalId);
          IntervalId= null;
         isautoplaying = false;
         console.log("Auto Play Stopped");
+        document.querySelector('.stop').innerHTML = "Start Autoplay";
+
     }
     
 }
