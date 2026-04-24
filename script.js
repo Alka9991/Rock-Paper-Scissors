@@ -26,7 +26,7 @@ function autoplay() {
       }, 1000);
       isautoplaying = true;
       console.log("Auto Play Started");
-     document.querySelector('.stop').innerHTML = "Start Autoplay";
+     document.querySelector('.stop').innerHTML = "Stop Autoplay";
     }
     else{
          clearInterval(IntervalId);
